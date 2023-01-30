@@ -15,52 +15,94 @@
 			"type": "pitch",
 			"instruments": [
 				{
-					"type": "FM",
+					"type": "Picked String",
 					"volume": 100,
 					"eqFilter": [
 						{
 							"type": "low-pass",
-							"cutoffHz": 9513.66,
-							"linearGain": 0.5
+							"cutoffHz": 4756.83,
+							"linearGain": 0.7071
+						},
+						{
+							"type": "high-pass",
+							"cutoffHz": 210.22,
+							"linearGain": 1
+						},
+						{
+							"type": "low-pass",
+							"cutoffHz": 5656.85,
+							"linearGain": 1
+						},
+						{
+							"type": "peak",
+							"cutoffHz": 594.6,
+							"linearGain": 0.3536
+						},
+						{
+							"type": "peak",
+							"cutoffHz": 1000,
+							"linearGain": 0.25
 						}
 					],
-					"preset": 832,
+					"preset": 449,
 					"effects": [
+						"note filter",
+						"distortion",
 						"reverb"
 					],
-					"reverb": 33,
-					"fadeInSeconds": 0.0263,
-					"fadeOutTicks": -3,
-					"algorithm": "1←(2 3 4)",
-					"feedbackType": "4⟲",
-					"feedbackAmplitude": 7,
-					"operators": [
+					"noteFilter": [
 						{
-							"frequency": "1×",
-							"amplitude": 15
+							"type": "high-pass",
+							"cutoffHz": 353.55,
+							"linearGain": 2
 						},
 						{
-							"frequency": "2×",
-							"amplitude": 4
-						},
-						{
-							"frequency": "1×",
-							"amplitude": 3
-						},
-						{
-							"frequency": "~1×",
-							"amplitude": 1
+							"type": "low-pass",
+							"cutoffHz": 2000,
+							"linearGain": 1
 						}
 					],
+					"distortion": 86,
+					"reverb": 67,
+					"fadeInSeconds": 0,
+					"fadeOutTicks": 12,
+					"harmonics": [
+						86,
+						100,
+						100,
+						86,
+						86,
+						86,
+						86,
+						71,
+						71,
+						71,
+						71,
+						71,
+						71,
+						71,
+						71,
+						71,
+						71,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57,
+						57
+					],
+					"unison": "none",
+					"stringSustain": 71,
 					"envelopes": [
 						{
-							"target": "operatorAmplitude",
-							"envelope": "punch",
-							"index": 3
-						},
-						{
-							"target": "feedbackAmplitude",
-							"envelope": "decay 2"
+							"target": "noteFilterFreq",
+							"envelope": "note size",
+							"index": 1
 						}
 					]
 				}
