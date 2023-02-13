@@ -10,3 +10,4 @@ Visite -> https://www.beepbox.co/
 -Alterei o arquivo no branch bugfix/branch-01 2x
 -Alterei o arquivo direto do GitHub 2x
 -Alterei o arquivo direto do GitHub 3x
+-Alterei o arquivo no branch bugfix/branch-01 3x
